@@ -1,3 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* @tailwind base;
+@tailwind components;
+@tailwind utilities;
 @font-face {
   font-family: "Agustina Regular";
   font-style: normal;
@@ -26,11 +32,11 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-/* Media Query */
+/* Media Query 
 @media (max-width: 1380px) {
   html,
   body {
     font-size: rem;
     line-height: normal;
   }
-}
+} */

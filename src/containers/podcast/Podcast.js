@@ -1,4 +1,4 @@
-import React, {useContext} from "react";
+ import React, {useContext} from "react";
 import "./Podcast.scss";
 import {podcastSection} from "../../portfolio";
 import {Fade} from "react-reveal";
@@ -52,3 +52,4 @@ export default function Podcast() {
     </Fade>
   );
 }
+ 

@@ -1,15 +1,28 @@
 @import "../../_globalColor";
 
-.footer-text {
+/* .footer-text {
   text-align: center;
   color: $subTitle !important;
-}
+} */
 
 .dark-mode {
   color: $textColorDark !important;
 }
 
-.footer-div {
+/* .footer-div {
   margin-top: 2rem;
   padding-bottom: 1rem;
+} */
+
+.div-container {
+  font-size: 0; /* Pour éviter les espaces blancs entre les div */
 }
+
+.div-container > div {
+  display: inline-block;
+  width: 50%; /* ou une valeur adaptée à vos besoins */
+  font-size: initial; /* Rétablir la taille de police par défaut */
+  box-sizing: border-box; /* Pour inclure la bordure et le padding dans la largeur */
+  vertical-align: top; /* Pour aligner les div verticalement si nécessaire */
+}
+

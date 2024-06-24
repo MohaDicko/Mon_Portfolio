@@ -20,8 +20,8 @@ const illustration = {
 };
 
 const greeting = {
-  username: "Saad Pasta",
-  title: "Hi all, I'm Saad",
+  username: "Mohamed Dicko",
+  title: "Hi all, I'm DICKO Mohamed",
   subTitle: emoji(
     "A passionate Full Stack Software Developer 🚀 having an experience of building Web and Mobile applications with JavaScript / Reactjs / Nodejs / React Native and some other cool libraries and frameworks."
   ),
@@ -33,13 +33,13 @@ const greeting = {
 // Social Media Links
 
 const socialMediaLinks = {
-  github: "https://github.com/saadpasta",
-  linkedin: "https://www.linkedin.com/in/saadpasta/",
-  gmail: "saadpasta70@gmail.com",
-  gitlab: "https://gitlab.com/saadpasta",
-  facebook: "https://www.facebook.com/saad.pasta7",
-  medium: "https://medium.com/@saadpasta",
-  stackoverflow: "https://stackoverflow.com/users/10422806/saad-pasta",
+  github: "https://github.com/MohaDicko",
+  linkedin: "https://www.linkedin.com/in/mohamed-dicko-4a0885196",
+  gmail: "dickobenjmohamed@gmail.com",
+ // gitlab: "https://gitlab.com/saadpasta",
+ // facebook: "https://www.facebook.com/saad.pasta7",
+  //medium: "https://medium.com/@saadpasta",
+ // stackoverflow: "https://stackoverflow.com/users/10422806/saad-pasta",
   // Instagram, Twitter and Kaggle are also supported in the links!
   // To customize icons and social links, tweak src/components/SocialMedia
   display: true // Set true to display this section, defaults to false
@@ -60,8 +60,8 @@ const skillsSection = {
     )
   ],
 
-  /* Make Sure to include correct Font Awesome Classname to view your icon
-https://fontawesome.com/icons?d=gallery */
+   /* Make Sure to include correct Font Awesome Classname to view your icon
+https://fontawesome.com/icons?d=gallery  */
 
   softwareSkills: [
     {
@@ -104,18 +104,18 @@ https://fontawesome.com/icons?d=gallery */
       skillName: "aws",
       fontAwesomeClassname: "fab fa-aws"
     },
-    {
+    /* {
       skillName: "firebase",
       fontAwesomeClassname: "fas fa-fire"
-    },
-    {
+    }, */
+    /* {
       skillName: "python",
       fontAwesomeClassname: "fab fa-python"
-    },
-    {
+    }, */
+    /* {
       skillName: "docker",
       fontAwesomeClassname: "fab fa-docker"
-    }
+    } */
   ],
   display: true // Set false to hide this section, defaults to true
 };
@@ -126,23 +126,33 @@ const educationInfo = {
   display: true, // Set false to hide this section, defaults to true
   schools: [
     {
-      schoolName: "Harvard University",
-      logo: require("./assets/images/harvardLogo.png"),
-      subHeader: "Master of Science in Computer Science",
-      duration: "September 2017 - April 2019",
-      desc: "Participated in the research of XXX and published 3 papers.",
+      schoolName: "GOMY CODE RABAT",
+      logo: require("./assets/images/gomycode-logo.webp"),
+      subHeader: "Software bootcamp",
+      duration: "Mars 2024 - Now",
+      desc: "Stack mern.",
       descBullets: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+        "",
+        
       ]
     },
     {
-      schoolName: "Stanford University",
-      logo: require("./assets/images/stanfordLogo.png"),
+      schoolName: "SUP-MTI RABAT",
+      logo: require("./assets/images/supmti-logo.webp"),
+      subHeader: "Master of Information Systems Engineering",
+      duration: "September 2018 - June 2023",
+      desc: "",
+      descBullets: [
+        
+      ]
+    },
+    {
+      schoolName: "LYCEE TALIBI",
+      logo: require("./assets/images/talibi.jpg"),
       subHeader: "Bachelor of Science in Computer Science",
-      duration: "September 2013 - April 2017",
-      desc: "Ranked top 10% in the program. Took courses about Software Engineering, Web Security, Operating Systems, ...",
-      descBullets: ["Lorem ipsum dolor sit amet, consectetur adipiscing elit"]
+      duration: "2017",
+      desc: "Bachelor's degree examination",
+      descBullets: [""]
     }
   ]
 };
@@ -162,7 +172,7 @@ const techStack = {
     },
     {
       Stack: "Programming",
-      progressPercentage: "60%"
+      progressPercentage: "80%"
     }
   ],
   displayCodersrank: false // Set true to display codersrank badges section need to changes your username in src/containers/skillProgress/skillProgress.js:17:62, defaults to false
@@ -174,29 +184,41 @@ const workExperiences = {
   display: true, //Set it to true to show workExperiences Section
   experience: [
     {
-      role: "Software Engineer",
-      company: "Facebook",
-      companylogo: require("./assets/images/facebookLogo.png"),
-      date: "June 2018 – Present",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      role: "Bootcamp Software Engineer ",
+      company: "GOMY CODE RABAT",
+      companylogo: require("./assets/images/gomycode-logo.webp"),
+      date: "Mars 2024 – Present",
+      desc: "La Stack MERN.",
       descBullets: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+        "",
+        
       ]
     },
     {
-      role: "Front-End Developer",
-      company: "Quora",
-      companylogo: require("./assets/images/quoraLogo.png"),
-      date: "May 2017 – May 2018",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      role: "Junior Web Developer",
+      company: "Freelance",
+      companylogo: require("./assets/images/dk soft logo.png"),
+      date: "Mars 2021 – Decembre 2023",
+      desc: "-Designing and developing interactive web platforms using the latest front-end and back-end technologies.",
+      
+      //    "Close collaboration with design teams to create intuitive and engaging user experiences.",
+      
+      // "Integration of robust security features to protect sensitive user data.",
+      
+      // "Optimizing performance and scalability of applications to handle high traffic loads.",
+      
+      // "Active participation in Agile meetings and code reviews to ensure quality and compliance of deliverables.",
+      
+      
     },
     {
-      role: "Software Engineer Intern",
-      company: "Airbnb",
-      companylogo: require("./assets/images/airbnbLogo.png"),
-      date: "Jan 2015 – Sep 2015",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      role: "  Stage Front-End Developer",
+      company: "Algo Consulting Rabat",
+      companylogo: require("./assets/images/algo.webp"),
+      date: "Mars 2021 – Jullet 2021",
+      desc: "reation of web and mobile applications on  behalf of the ALGO CONSULTING GROUP."
+     
+      
     }
   ]
 };
@@ -204,11 +226,11 @@ const workExperiences = {
 /* Your Open Source Section to View Your Github Pinned Projects
 To know how to get github key look at readme.md */
 
-const openSource = {
+ const openSource = {
   showGithubProfile: "true", // Set true or false to show Contact profile using Github, defaults to true
   display: true // Set false to hide this section, defaults to true
 };
-
+ 
 // Some big projects you have worked on
 
 const bigProjects = {
@@ -305,7 +327,7 @@ const achievementSection = {
 
 // Blogs Section
 
-const blogSection = {
+/* const blogSection = {
   title: "Blogs",
   subtitle:
     "With Love for Developing cool stuff, I love to write and teach others what I have learnt.",
@@ -325,11 +347,11 @@ const blogSection = {
     }
   ],
   display: true // Set false to hide this section, defaults to true
-};
+}; */
 
 // Talks Sections
 
-const talkSection = {
+/* const talkSection = {
   title: "TALKS",
   subtitle: emoji(
     "I LOVE TO SHARE MY LIMITED KNOWLEDGE AND GET A SPEAKER BADGE 😅"
@@ -344,11 +366,11 @@ const talkSection = {
     }
   ],
   display: true // Set false to hide this section, defaults to true
-};
+}; */
 
 // Podcast Section
 
-const podcastSection = {
+/* const podcastSection = {
   title: emoji("Podcast 🎙️"),
   subtitle: "I LOVE TO TALK ABOUT MYSELF AND TECHNOLOGY",
 
@@ -357,7 +379,8 @@ const podcastSection = {
     "https://anchor.fm/codevcast/embed/episodes/DevStory---Saad-Pasta-from-Karachi--Pakistan-e9givv/a-a15itvo"
   ],
   display: true // Set false to hide this section, defaults to true
-};
+}; */
+
 
 // Resume Section
 const resumeSection = {
@@ -372,17 +395,17 @@ const contactInfo = {
   title: emoji("Contact Me ☎️"),
   subtitle:
     "Discuss a project or just want to say hi? My Inbox is open for all.",
-  number: "+92-0000000000",
-  email_address: "saadpasta70@gmail.com"
+  number: "+212 614 99 27 95 / +223 74 13 20 32",
+  email_address: "dickobenjmohamed@gmail.com"
 };
 
 // Twitter Section
 
-const twitterDetails = {
+/* const twitterDetails = {
   userName: "twitter", //Replace "twitter" with your twitter username without @
   display: true // Set true to display this section, defaults to false
 };
-
+ */
 const isHireable = false; // Set false if you are not looking for a job. Also isHireable will be display as Open for opportunities: Yes/No in the GitHub footer
 
 export {
@@ -397,11 +420,11 @@ export {
   openSource,
   bigProjects,
   achievementSection,
-  blogSection,
-  talkSection,
-  podcastSection,
+  /* blogSection, */
+  /* talkSection, */
+ /*  podcastSection, */
   contactInfo,
-  twitterDetails,
+  /* twitterDetails, */
   isHireable,
   resumeSection
 };

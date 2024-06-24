@@ -20,6 +20,10 @@ export default function Greeting() {
         <div className="greeting-main">
           <div className="greeting-text-div">
             <div>
+
+            {/* <h1 className="text-3xl font-bold underline">
+      Hello world!
+    </h1> */}
               <h1
                 className={isDark ? "dark-mode greeting-text" : "greeting-text"}
               >
