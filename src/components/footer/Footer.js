@@ -35,25 +35,25 @@ export default function Footer() {
 
   return (
     <Fade bottom duration={1000} distance="5px">
-      <div className="flex justify-between mb-4">
-        <div className="footer-div w-1/2">
-          <p className={isDark ? "dark-mode footer-text" : "footer-text"}>
+      <div className="flex flex-wrap mb-4">
+        <div className="footer-div w-full md:w-1/2 text-center">
+          <p className={`${isDark ? "dark-mode" : ""} text-sm`}>
             {emoji("Made with ❤️ by DICKO Mohamed")}
           </p>
-          <p className={isDark ? "dark-mode footer-text" : "footer-text"}>
+          <p className={`${isDark ? "dark-mode" : ""} text-sm`}>
             Theme by{" "}
             <a href="*">
               DICKO Mohamed
             </a>
           </p>
         </div>
-        <div className="contact-form w-1/2 p-4 bg-slate-100">
+        <div className="contact-form w-full md:w-full p-4 bg-slate-100">
           <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-center text-gray-900 dark:text-white">
             Contact Me
           </h2>
           <form onSubmit={handleFormSubmit} className="space-y-8">
             <div className="flex flex-wrap -mx-3 mb-6">
-              <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+              <div className="w-full px-3 mb-6">
                 <label
                   htmlFor="email"
                   className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300"
@@ -70,7 +70,7 @@ export default function Footer() {
                   required
                 />
               </div>
-              <div className="w-full md:w-1/2 px-3">
+              <div className="w-full px-3">
                 <label
                   htmlFor="subject"
                   className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300"
