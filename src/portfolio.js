@@ -309,15 +309,15 @@ const achievementSection = {
     },
 
     {
-      title: "PWA Web App Developer",
+      title: "Responsiv Web Design",
       subtitle: "Completed Certifcation from SMIT for PWA Web App Development",
-      image: require("./assets/images/pwaLogo.webp"),
+      image: require("./assets/images/freecodecamp.webp"),
       imageAlt: "PWA Logo",
       footerLink: [
-        {name: "Certification", url: ""},
+        {name: "Certification", url: "https://www.freecodecamp.org/certification/MDICKO/responsive-web-design"},
         {
-          name: "Final Project",
-          url: "#"
+          name: "Freecodecamp",
+          url: "https://www.freecodecamp.org/certification/MDICKO/responsive-web-design"
         }
       ]
     }
