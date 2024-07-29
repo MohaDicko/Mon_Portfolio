@@ -3,7 +3,7 @@ import "./Footer.scss";
 import { Fade } from "react-reveal";
 import emoji from "react-easy-emoji";
 import StyleContext from "../../contexts/StyleContext";
-import axios from "axios"; // Import Axios
+import axios from "axios";
 
 export default function Footer() {
   const { isDark } = useContext(StyleContext);
@@ -14,14 +14,12 @@ export default function Footer() {
 
   const handleFormSubmit = async (e) => {
     e.preventDefault();
-
     try {
       const response = await axios.post("https://node-mailer-five.vercel.app/api/mailing/", {
         to: email,
         subject: subject,
         html: message,
       });
-
       if (response.status === 200) {
         setNotification("Message sent successfully!");
       } else {
@@ -35,20 +33,20 @@ export default function Footer() {
 
   return (
     <Fade bottom duration={1000} distance="5px">
-      <div className="flex flex-wrap mb-4">
-        <div className="footer-div w-full md:w-1/2 text-center">
+      <div className="flex flex-wrap mb-4 bg-gray-800 text-white p-8">
+        <div className="footer-div w-full md:w-1/2 text-center mb-4 md:mb-0">
           <p className={`${isDark ? "dark-mode" : ""} text-sm`}>
             {emoji("Made with ❤️ by DICKO Mohamed")}
           </p>
           <p className={`${isDark ? "dark-mode" : ""} text-sm`}>
             Theme by{" "}
-            <a href="*">
+            <a href="*" className="text-blue-400 hover:underline">
               DICKO Mohamed
             </a>
           </p>
         </div>
-        <div className="contact-form w-full md:w-full p-4 bg-slate-100">
-          <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-center text-gray-900 dark:text-white">
+        <div className="contact-form w-full md:w-1/2 p-4 bg-gray-700 rounded-lg shadow-lg">
+          <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-center text-white">
             Contact Me
           </h2>
           <form onSubmit={handleFormSubmit} className="space-y-8">
@@ -56,7 +54,7 @@ export default function Footer() {
               <div className="w-full px-3 mb-6">
                 <label
                   htmlFor="email"
-                  className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300"
+                  className="block mb-2 text-sm font-medium text-gray-300"
                 >
                   Your email
                 </label>
@@ -73,7 +71,7 @@ export default function Footer() {
               <div className="w-full px-3">
                 <label
                   htmlFor="subject"
-                  className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300"
+                  className="block mb-2 text-sm font-medium text-gray-300"
                 >
                   Subject
                 </label>
@@ -91,7 +89,7 @@ export default function Footer() {
             <div className="mb-6">
               <label
                 htmlFor="message"
-                className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-400"
+                className="block mb-2 text-sm font-medium text-gray-300"
               >
                 Your message
               </label>
@@ -106,13 +104,13 @@ export default function Footer() {
             </div>
             <button
               type="submit"
-              className="py-3 px-5 text-sm font-medium text-center text-white rounded-lg bg-black sm:w-fit hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800"
+              className="py-3 px-5 text-sm font-medium text-center text-white rounded-lg bg-blue-600 hover:bg-blue-700 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-500 dark:hover:bg-blue-600 dark:focus:ring-blue-800"
             >
               Send message
             </button>
           </form>
           {notification && (
-            <div className="mt-4 text-center text-sm text-gray-900 dark:text-white">
+            <div className="mt-4 text-center text-sm text-gray-300">
               {notification}
             </div>
           )}
