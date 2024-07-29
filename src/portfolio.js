@@ -251,12 +251,12 @@ const bigProjects = {
     },
     {
       image: require("./assets/images/nextuLogo.webp"),
-      projectName: "Nextu",
+      projectName: "Assurance Voyage",
       projectDesc: "",
       footerLink: [
         {
           name: "Visit Website",
-          url: "#"
+          url: "https//assurancedevoyage.ma/"
         }
       ]
     }
