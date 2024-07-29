@@ -297,8 +297,8 @@ const achievementSection = {
     {
       title: "full stack web developer",
       subtitle:
-        "Developed a Google Assistant Action JavaScript Guru that is available on 2 Billion devices world wide.",
-      image: require("./assets/images/Mohamed DICKO-Software Developer Bootcamp Certificate of Completion (1).pdf"),
+        "GOMYCODE RABAT BOOTCAMP.",
+      image: require("./assets/images/CERTIF gomycode.PNG"),
       imageAlt: "Google Assistant Action Logo",
       footerLink: [
         {
