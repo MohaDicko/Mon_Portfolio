@@ -256,7 +256,7 @@ const bigProjects = {
       footerLink: [
         {
           name: "Visit Website",
-          url: "https//assurancedevoyage.ma/"
+          url: "https://assurancedevoyage.ma/"
         }
       ]
     }
