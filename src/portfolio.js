@@ -302,7 +302,7 @@ const achievementSection = {
       imageAlt: "Google Assistant Action Logo",
       footerLink: [
         {
-          name: "View Google Assistant Action",
+          name: "View certificate",
           url: "#"
         }
       ]
