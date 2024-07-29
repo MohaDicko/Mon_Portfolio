@@ -104,18 +104,18 @@ https://fontawesome.com/icons?d=gallery  */
       skillName: "aws",
       fontAwesomeClassname: "fab fa-aws"
     },
-    /* {
-      skillName: "firebase",
-      fontAwesomeClassname: "fas fa-fire"
-    }, */
-    /* {
-      skillName: "python",
-      fontAwesomeClassname: "fab fa-python"
-    }, */
-    /* {
-      skillName: "docker",
-      fontAwesomeClassname: "fab fa-docker"
-    } */
+     {
+      skillName: "ASP.NET",
+      fontAwesomeClassname: "fab fa-microsoft"
+    }, 
+    {
+      skillName: "Xamarin Forms",
+      fontAwesomeClassname: "fas fa-mobile-alt"
+    }, 
+     {
+      skillName: "Angular",
+      fontAwesomeClassname: "fab fa-angular"
+    } 
   ],
   display: true // Set false to hide this section, defaults to true
 };
