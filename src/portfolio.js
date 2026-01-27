@@ -23,7 +23,7 @@ const greeting = {
   username: "Mohamed Dicko",
   title: "Hi all, I'm DICKO Mohamed",
   subTitle: emoji(
-    "A passionate Full Stack Software Developer 🚀 having an experience of building Web and Mobile applications with JavaScript / Reactjs / Nodejs / React Native and some other cool libraries and frameworks."
+    "IT INGENIEUR | Suivi & Évaluateur 🚀. Ingénieur en Ingénierie Systèmes informatiques (Option système d’information) motivé et dynamique, expert en développement Full Stack (MERN) et Solutions Cloud (AWS)."
   ),
   resumeLink:
     "https://drive.google.com/file/d/1ofFdKF_mqscH8WvXkSObnVvC9kK7Ldlu/view?usp=sharing", // Set to empty to hide the button
@@ -35,11 +35,11 @@ const greeting = {
 const socialMediaLinks = {
   github: "https://github.com/MohaDicko",
   linkedin: "https://www.linkedin.com/in/mohamed-dicko-4a0885196",
-  gmail: "dickobenjmohamed@gmail.com",
- // gitlab: "https://gitlab.com/saadpasta",
- // facebook: "https://www.facebook.com/saad.pasta7",
+  gmail: "Mohadicko95@gmail.com",
+  // gitlab: "https://gitlab.com/saadpasta",
+  // facebook: "https://www.facebook.com/saad.pasta7",
   //medium: "https://medium.com/@saadpasta",
- // stackoverflow: "https://stackoverflow.com/users/10422806/saad-pasta",
+  // stackoverflow: "https://stackoverflow.com/users/10422806/saad-pasta",
   // Instagram, Twitter and Kaggle are also supported in the links!
   // To customize icons and social links, tweak src/components/SocialMedia
   display: true // Set true to display this section, defaults to false
@@ -52,15 +52,23 @@ const skillsSection = {
   subTitle: "CRAZY FULL STACK DEVELOPER WHO WANTS TO EXPLORE EVERY TECH STACK",
   skills: [
     emoji(
-      "⚡ Develop highly interactive Front end / User Interfaces for your web and mobile applications"
+      "⚡ Analyse de données : Expertise en KoBo Collect et ODK Collect pour le suivi et l'évaluation"
     ),
-    emoji("⚡ Progressive Web Applications ( PWA ) in normal and SPA Stacks"),
     emoji(
-      "⚡ Integration of third party services such as Firebase/ AWS / Digital Ocean"
+      "⚡ Développer des interfaces utilisateur hautement interactives (React.js, Angular, Vue.js)"
+    ),
+    emoji(
+      "⚡ Création de back-ends évolutifs et API RESTful (Node.js, Express.js, ASP.NET MVC)"
+    ),
+    emoji(
+      "⚡ Solutions Cloud et Déploiement : AWS Certified Cloud Practitioner, Azure"
+    ),
+    emoji(
+      "⚡ Méthodologies Agile (Scrum), DevOps, et Tests Automatisés"
     )
   ],
 
-   /* Make Sure to include correct Font Awesome Classname to view your icon
+  /* Make Sure to include correct Font Awesome Classname to view your icon
 https://fontawesome.com/icons?d=gallery  */
 
   softwareSkills: [
@@ -104,18 +112,30 @@ https://fontawesome.com/icons?d=gallery  */
       skillName: "aws",
       fontAwesomeClassname: "fab fa-aws"
     },
-     {
+    {
       skillName: "ASP.NET",
       fontAwesomeClassname: "fab fa-microsoft"
-    }, 
+    },
     {
       skillName: "Xamarin Forms",
       fontAwesomeClassname: "fas fa-mobile-alt"
-    }, 
-     {
+    },
+    {
       skillName: "Angular",
       fontAwesomeClassname: "fab fa-angular"
-    } 
+    },
+    {
+      skillName: "Vue.js",
+      fontAwesomeClassname: "fab fa-vuejs"
+    },
+    {
+      skillName: "TypeScript",
+      fontAwesomeClassname: "fas fa-code"
+    },
+    {
+      skillName: "Azure",
+      fontAwesomeClassname: "fab fa-microsoft"
+    }
   ],
   display: true // Set false to hide this section, defaults to true
 };
@@ -126,33 +146,20 @@ const educationInfo = {
   display: true, // Set false to hide this section, defaults to true
   schools: [
     {
-      schoolName: "GOMY CODE RABAT",
-      logo: require("./assets/images/gomycode-logo.webp"),
-      subHeader: "Software bootcamp",
-      duration: "Mars 2024 - Now",
-      desc: "Stack mern.",
-      descBullets: [
-        "",
-        
-      ]
-    },
-    {
       schoolName: "SUP-MTI RABAT",
       logo: require("./assets/images/supmti-logo.webp"),
-      subHeader: "Master of Information Systems Engineering",
-      duration: "September 2018 - June 2023",
-      desc: "",
-      descBullets: [
-        
-      ]
+      subHeader: "Master 2 en informatique (Mentions)",
+      duration: "2018 - 2023",
+      desc: "Ingénierie Systèmes informatiques (Option système d’information).",
+      descBullets: []
     },
     {
-      schoolName: "LYCEE TALIBI",
+      schoolName: "IUGP-TALIBI",
       logo: require("./assets/images/talibi.jpg"),
-      subHeader: "Bachelor of Science in Computer Science",
-      duration: "2017",
-      desc: "Bachelor's degree examination",
-      descBullets: [""]
+      subHeader: "Licence en Informatique de gestion (Mentions)",
+      duration: "2015 - 2018",
+      desc: "Bamako, Mali",
+      descBullets: []
     }
   ]
 };
@@ -184,41 +191,62 @@ const workExperiences = {
   display: true, //Set it to true to show workExperiences Section
   experience: [
     {
-      role: "Bootcamp Software Engineer ",
-      company: "GOMY CODE RABAT",
-      companylogo: require("./assets/images/gomycode-logo.webp"),
-      date: "Mars 2024 – Present",
-      desc: "La Stack MERN.",
+      role: "Responsable opérations",
+      company: "SAHEL FLEET - SAHEL Multi-Services",
+      companylogo: require("./assets/images/sahel-multiservices-logo.jpg"),
+      date: "27 Juillet 2025 – Actuellement",
+      desc: "Bamako, Mali",
       descBullets: [
-        "",
-        
+        "Gestion et suivi des solutions de géolocalisation et tracking GPS.",
+        "Installation et paramétrage de dispositifs (Trackers).",
+        "Assistance technique et formation des utilisateurs sur les outils de gestion de flotte.",
+        "Suivi client et élaboration de rapports de performance (consommation, trajets, sécurité).",
+        "Contribution au développement commercial (prospection, partenariats)."
       ]
     },
     {
-      role: "Junior Web Developer",
-      company: "Freelance",
-      companylogo: require("./assets/images/dk soft logo.png"),
-      date: "Mars 2021 – Decembre 2023",
-      desc: "-Designing and developing interactive web platforms using the latest front-end and back-end technologies.",
-      
-      //    "Close collaboration with design teams to create intuitive and engaging user experiences.",
-      
-      // "Integration of robust security features to protect sensitive user data.",
-      
-      // "Optimizing performance and scalability of applications to handle high traffic loads.",
-      
-      // "Active participation in Agile meetings and code reviews to ensure quality and compliance of deliverables.",
-      
-      
+      role: "Cloud Practitioner Engineer",
+      company: "Orange Digital Center Mali",
+      companylogo: require("./assets/images/odc-logo.png"),
+      date: "27 Janvier – 27 Juillet 2025",
+      desc: "Formation Cloud Computing AWS",
+      descBullets: [
+        "Préparation à la certification AWS Certified Cloud Practitioner (CLF-C02).",
+        "Maîtrise des services clés : EC2, S3, RDS, Lambda, IAM, CloudFront.",
+        "Bonnes pratiques de sécurité (IAM, chiffrement KMS) et surveillance des coûts (AWS Budgets)."
+      ]
     },
     {
-      role: "  Stage Front-End Developer",
+      role: "Développeur Web Fullstack Junior",
+      company: "GOMYCODE RABAT BOOTCAMP",
+      companylogo: require("./assets/images/gomycode-logo.webp"),
+      date: "Mars 2024 – Juillet 2024",
+      desc: "Maîtrise de la pile MERN",
+      descBullets: [
+        "Expertise MongoDB (NoSQL) et Express.js pour API RESTful.",
+        "Développement d'interfaces dynamiques avec React.js.",
+        "Construction de serveurs évolutifs avec Node.js."
+      ]
+    },
+    {
+      role: "Suivi et Évaluateur",
+      company: "SUSTAINABLE OPPORTUNITY FOR RURAL ORGANISATIONS (SORO)",
+      companylogo: require("./assets/images/developerActivity.svg"),
+      date: "Juillet 2023 – Février 2024",
+      desc: "Gestion de programme et analyse de données",
+      descBullets: [
+        "Surveillance continue des programmes pour garantir la conformité aux objectifs.",
+        "Évaluation périodique des résultats avec méthodologies qualitatives et quantitatives.",
+        "Collecte et analyse de données pour identifier les tendances et produire des rapports.",
+        "Formation des équipes terrain sur les pratiques de suivi et évaluation."
+      ]
+    },
+    {
+      role: "Stage Front-End Developer",
       company: "Algo Consulting Rabat",
       companylogo: require("./assets/images/algo.webp"),
-      date: "Mars 2021 – Jullet 2021",
-      desc: "reation of web and mobile applications on  behalf of the ALGO CONSULTING GROUP."
-     
-      
+      date: "Mars 2021 – Juillet 2021",
+      desc: "Création d'applications web et mobile pour le compte du groupe ALGO CONSULTING."
     }
   ]
 };
@@ -226,36 +254,46 @@ const workExperiences = {
 /* Your Open Source Section to View Your Github Pinned Projects
 To know how to get github key look at readme.md */
 
- const openSource = {
+const openSource = {
   showGithubProfile: "true", // Set true or false to show Contact profile using Github, defaults to true
   display: true // Set false to hide this section, defaults to true
 };
- 
+
 // Some big projects you have worked on
 
 const bigProjects = {
-  title: "Some Projects",
-  subtitle: "SOME STARTUPS AND COMPANIES THAT I HELPED TO CREATE THEIR TECH",
+  title: "Projets Récents",
+  subtitle: "ENTREPRISES ET SOLUTIONS QUE J'AI CO-FONDÉES ET DÉVELOPPÉES",
   projects: [
     {
-      image: require("./assets/images/saayaHealthLogo.webp"),
-      projectName: "Kamsir Pharma",
-      projectDesc: "",
+      image: require("./assets/images/sahel-multiservices-banner.png"),
+      projectName: "Sahel MULTISERVICES",
+      projectDesc: "Une entreprise multiservices offrant des solutions professionnelles variées pour répondre aux besoins du marché sahélien.",
       footerLink: [
         {
-          name: "Visit Website",
-          url: "https://pharmacie-one.vercel.app/"
+          name: "Visiter le site",
+          url: "https://sahelmultiservices.com/"
         }
-        //  you can add extra buttons here.
       ]
     },
     {
-      image: require("./assets/images/nextuLogo.webp"),
-      projectName: "Assurance Voyage",
-      projectDesc: "",
+      image: require("./assets/images/gps-fleet-sahel-banner.png"),
+      projectName: "GPS FLEET-SAHEL",
+      projectDesc: "Solution avancée de géolocalisation et de gestion de flotte par tracking GPS, optimisée pour la sécurité et la performance.",
       footerLink: [
         {
-          name: "Visit Website",
+          name: "Visiter le site",
+          url: "https://gpsfleetsahel.com/"
+        }
+      ]
+    },
+    {
+      image: require("./assets/images/rfa-logo.png"),
+      projectName: "Assurance Voyage (RFA)",
+      projectDesc: "Plateforme de souscription d'assurance voyage en ligne, simplifiant les démarches pour les voyageurs.",
+      footerLink: [
+        {
+          name: "Visiter le site",
           url: "https://assurancedevoyage.ma/"
         }
       ]
@@ -273,6 +311,18 @@ const achievementSection = {
     "Achievements, Certifications, Award Letters and Some Cool Stuff that I have done !",
 
   achievementsCards: [
+    {
+      title: "AWS Certified Cloud Practitioner",
+      subtitle: "Cloud Computing Bootcamp - Orange Digital Center Mali",
+      image: require("./assets/images/aws-practitioner.png"),
+      imageAlt: "AWS Logo",
+      footerLink: [
+        {
+          name: "Certification",
+          url: "#"
+        }
+      ]
+    },
     {
       title: "Postman API Fundamentals Student Expert",
       subtitle:
@@ -314,7 +364,7 @@ const achievementSection = {
       image: require("./assets/images/freecodecamp.webp"),
       imageAlt: "PWA Logo",
       footerLink: [
-        {name: "Certification", url: "https://www.freecodecamp.org/certification/MDICKO/responsive-web-design"},
+        { name: "Certification", url: "https://www.freecodecamp.org/certification/MDICKO/responsive-web-design" },
         {
           name: "Freecodecamp",
           url: "https://www.freecodecamp.org/certification/MDICKO/responsive-web-design"
@@ -394,9 +444,9 @@ const resumeSection = {
 const contactInfo = {
   title: emoji("Contact Me ☎️"),
   subtitle:
-    "Discuss a project or just want to say hi? My Inbox is open for all.",
-  number: "+212 614 99 27 95 / +223 74 13 20 32",
-  email_address: "dickobenjmohamed@gmail.com"
+    "Discuter d'un projet ou simplement dire bonjour ? Ma boîte de réception est ouverte à tous.",
+  number: "+223 74 13 20 32",
+  email_address: "Mohadicko95@gmail.com"
 };
 
 // Twitter Section
@@ -422,7 +472,7 @@ export {
   achievementSection,
   /* blogSection, */
   /* talkSection, */
- /*  podcastSection, */
+  /*  podcastSection, */
   contactInfo,
   /* twitterDetails, */
   isHireable,

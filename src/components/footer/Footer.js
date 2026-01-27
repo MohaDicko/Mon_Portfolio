@@ -33,87 +33,68 @@ export default function Footer() {
 
   return (
     <Fade bottom duration={1000} distance="5px">
-      <div className="flex flex-wrap mb-4 bg-gray-800 text-white p-8">
-        <div className="footer-div w-full md:w-1/2 text-center mb-4 md:mb-0">
-          <p className={`${isDark ? "dark-mode" : ""} text-sm`}>
-            {emoji("Made with ❤️ by DICKO Mohamed")}
-          </p>
-          <p className={`${isDark ? "dark-mode" : ""} text-sm`}>
-            Theme by{" "}
-            <a href="*" className="text-blue-400 hover:underline">
-              DICKO Mohamed
-            </a>
-          </p>
-        </div>
-        <div className="contact-form w-full md:w-1/2 p-4 bg-gray-700 rounded-lg shadow-lg">
-          <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-center text-white">
-            Contact Me
+      <div className="footer-container">
+        <div className="contact-form-section">
+          <h2 className="contact-form-title">
+            Prenons contact
           </h2>
-          <form onSubmit={handleFormSubmit} className="space-y-8">
-            <div className="flex flex-wrap -mx-3 mb-6">
-              <div className="w-full px-3 mb-6">
-                <label
-                  htmlFor="email"
-                  className="block mb-2 text-sm font-medium text-gray-300"
-                >
-                  Your email
-                </label>
+          <p className="contact-form-subtitle">
+            Vous avez un projet ou une question ? Écrivez-moi directement.
+          </p>
+          <form onSubmit={handleFormSubmit} className="contact-form-inner">
+            <div className="form-group-row">
+              <div className="form-field">
+                <label htmlFor="email">Votre email</label>
                 <input
                   type="email"
                   id="email"
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
-                  className="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
-                  placeholder="name@flowbite.com"
+                  placeholder="nom@exemple.com"
                   required
                 />
               </div>
-              <div className="w-full px-3">
-                <label
-                  htmlFor="subject"
-                  className="block mb-2 text-sm font-medium text-gray-300"
-                >
-                  Subject
-                </label>
+              <div className="form-field">
+                <label htmlFor="subject">Sujet</label>
                 <input
                   type="text"
                   id="subject"
                   value={subject}
                   onChange={(e) => setSubject(e.target.value)}
-                  className="block p-3 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
-                  placeholder="Let us know how we can help you"
+                  placeholder="Comment puis-je vous aider ?"
                   required
                 />
               </div>
             </div>
-            <div className="mb-6">
-              <label
-                htmlFor="message"
-                className="block mb-2 text-sm font-medium text-gray-300"
-              >
-                Your message
-              </label>
+            <div className="message-field">
+              <label htmlFor="message">Votre message</label>
               <textarea
                 id="message"
                 value={message}
                 onChange={(e) => setMessage(e.target.value)}
-                rows="6"
-                className="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg shadow-sm border border-gray-300 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
-                placeholder="Leave a comment..."
+                rows="4"
+                placeholder="Votre message ici..."
               ></textarea>
             </div>
-            <button
-              type="submit"
-              className="py-3 px-5 text-sm font-medium text-center text-white rounded-lg bg-blue-600 hover:bg-blue-700 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-500 dark:hover:bg-blue-600 dark:focus:ring-blue-800"
-            >
-              Send message
+            <button type="submit" className="submit-btn">
+              Envoyer le message
             </button>
           </form>
           {notification && (
-            <div className="mt-4 text-center text-sm text-gray-300">
-              {notification}
+            <div className={`notification-pill ${notification.includes("success") ? "success" : "error"}`}>
+              {notification === "Message sent successfully!" ? "✅ Message envoyé avec succès !" : "❌ Échec de l'envoi."}
             </div>
           )}
+        </div>
+
+        <div className="footer-bottom">
+          <p className="footer-credit">
+            {emoji("Réalisé avec ❤️ par Mohamed Dicko © 2026")}
+          </p>
+          <div className="footer-links">
+            <a href="https://github.com/MohaDicko" target="_blank" rel="noopener noreferrer">GitHub</a>
+            <a href="https://www.linkedin.com/in/mohamed-dicko-4a0885196" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+          </div>
         </div>
       </div>
     </Fade>

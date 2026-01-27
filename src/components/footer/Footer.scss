@@ -1,15 +1,173 @@
 @import "../../_globalColor";
 
-.footer-text {
+.footer-container {
+  padding: 4rem 2rem 2rem;
+  background: linear-gradient(135deg, darken($darkBackground, 5%) 0%, $darkBackground 100%);
+  color: #ffffff;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.contact-form-section {
+  max-width: 800px;
+  margin: 0 auto 4rem;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  padding: 3rem;
+  border-radius: 20px;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.contact-form-title {
+  font-size: 2.5rem;
+  font-weight: 800;
   text-align: center;
-  color: $subTitle !important;
+  margin-bottom: 0.5rem;
+  background: linear-gradient(90deg, #fff, #a5a5a5);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.contact-form-subtitle {
+  text-align: center;
+  color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 2.5rem;
+  font-size: 1.1rem;
+}
+
+.contact-form-inner {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.form-group-row {
+  display: flex;
+  gap: 1.5rem;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
+}
+
+.form-field,
+.message-field {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+
+  label {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.8);
+    margin-left: 5px;
+  }
+
+  input,
+  textarea {
+    padding: 12px 18px;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    color: #fff;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+
+    &:focus {
+      outline: none;
+      background: rgba(255, 255, 255, 0.12);
+      border-color: $githubProfileCardBorder;
+      box-shadow: 0 0 15px rgba($githubProfileCardBorder, 0.3);
+    }
+
+    &::placeholder {
+      color: rgba(255, 255, 255, 0.3);
+    }
+  }
+}
+
+.submit-btn {
+  margin-top: 1rem;
+  padding: 14px;
+  border-radius: 12px;
+  border: none;
+  background: linear-gradient(90deg, $githubProfileCardBorder, darken($githubProfileCardBorder, 15%));
+  color: white;
+  font-weight: 700;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba($githubProfileCardBorder, 0.4);
+  }
+
+  &:active {
+    transform: translateY(0);
+  }
+}
+
+.notification-pill {
+  margin-top: 2rem;
+  padding: 12px;
+  border-radius: 10px;
+  text-align: center;
+  font-weight: 600;
+
+  &.success {
+    background: rgba(76, 175, 80, 0.2);
+    color: #81c784;
+    border: 1px solid rgba(76, 175, 80, 0.3);
+  }
+
+  &.error {
+    background: rgba(244, 67, 54, 0.2);
+    color: #e57373;
+    border: 1px solid rgba(244, 67, 54, 0.3);
+  }
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 2rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    gap: 1.5rem;
+    text-align: center;
+  }
+}
+
+.footer-credit {
+  font-size: 1rem;
+  opacity: 0.8;
+}
+
+.footer-links {
+  display: flex;
+  gap: 2rem;
+
+  a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    opacity: 0.6;
+    transition: opacity 0.3s ease;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
 }
 
 .dark-mode {
-  color: $textColorDark !important;
+  .footer-container {
+    background: #111;
+  }
 }
-
-/* .footer-div {
-  margin-top: 2rem;
-  padding-bottom: 1rem;
-} */
