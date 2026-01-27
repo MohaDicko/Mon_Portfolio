@@ -6,7 +6,7 @@ import StyleContext from "../../contexts/StyleContext";
 import axios from "axios";
 
 export default function Footer() {
-  const {isDark} = useContext(StyleContext);
+  // const {isDark} = useContext(StyleContext);
   const [email, setEmail] = useState("");
   const [subject, setSubject] = useState("");
   const [message, setMessage] = useState("");
