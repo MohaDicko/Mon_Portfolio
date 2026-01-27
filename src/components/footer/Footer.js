@@ -1,12 +1,11 @@
-import React, { useState } from "react";
+import React, {useState} from "react";
 import "./Footer.scss";
-import { Fade } from "react-reveal";
+import {Fade} from "react-reveal";
 import emoji from "react-easy-emoji";
 
 import axios from "axios";
 
 export default function Footer() {
-
   const [email, setEmail] = useState("");
   const [subject, setSubject] = useState("");
   const [message, setMessage] = useState("");
@@ -83,8 +82,9 @@ export default function Footer() {
           </form>
           {notification && (
             <div
-              className={`notification-pill ${notification.includes("success") ? "success" : "error"
-                }`}
+              className={`notification-pill ${
+                notification.includes("success") ? "success" : "error"
+              }`}
             >
               {notification === "Message sent successfully!"
                 ? "✅ Message envoyé avec succès !"
