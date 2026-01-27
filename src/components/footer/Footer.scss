@@ -2,7 +2,11 @@
 
 .footer-container {
   padding: 4rem 2rem 2rem;
-  background: linear-gradient(135deg, darken($darkBackground, 5%) 0%, $darkBackground 100%);
+  background: linear-gradient(
+    135deg,
+    darken($darkBackground, 5%) 0%,
+    $darkBackground 100%
+  );
   color: #ffffff;
   border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
@@ -93,7 +97,11 @@
   padding: 14px;
   border-radius: 12px;
   border: none;
-  background: linear-gradient(90deg, $githubProfileCardBorder, darken($githubProfileCardBorder, 15%));
+  background: linear-gradient(
+    90deg,
+    $githubProfileCardBorder,
+    darken($githubProfileCardBorder, 15%)
+  );
   color: white;
   font-weight: 700;
   font-size: 1.1rem;

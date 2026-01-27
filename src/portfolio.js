@@ -63,9 +63,7 @@ const skillsSection = {
     emoji(
       "⚡ Solutions Cloud et Déploiement : AWS Certified Cloud Practitioner, Azure"
     ),
-    emoji(
-      "⚡ Méthodologies Agile (Scrum), DevOps, et Tests Automatisés"
-    )
+    emoji("⚡ Méthodologies Agile (Scrum), DevOps, et Tests Automatisés")
   ],
 
   /* Make Sure to include correct Font Awesome Classname to view your icon
@@ -268,7 +266,8 @@ const bigProjects = {
     {
       image: require("./assets/images/sahel-multiservices-banner.png"),
       projectName: "Sahel MULTISERVICES",
-      projectDesc: "Une entreprise multiservices offrant des solutions professionnelles variées pour répondre aux besoins du marché sahélien.",
+      projectDesc:
+        "Une entreprise multiservices offrant des solutions professionnelles variées pour répondre aux besoins du marché sahélien.",
       footerLink: [
         {
           name: "Visiter le site",
@@ -279,7 +278,8 @@ const bigProjects = {
     {
       image: require("./assets/images/gps-fleet-sahel-banner.png"),
       projectName: "GPS FLEET-SAHEL",
-      projectDesc: "Solution avancée de géolocalisation et de gestion de flotte par tracking GPS, optimisée pour la sécurité et la performance.",
+      projectDesc:
+        "Solution avancée de géolocalisation et de gestion de flotte par tracking GPS, optimisée pour la sécurité et la performance.",
       footerLink: [
         {
           name: "Visiter le site",
@@ -290,7 +290,8 @@ const bigProjects = {
     {
       image: require("./assets/images/rfa-logo.png"),
       projectName: "Assurance Voyage (RFA)",
-      projectDesc: "Plateforme de souscription d'assurance voyage en ligne, simplifiant les démarches pour les voyageurs.",
+      projectDesc:
+        "Plateforme de souscription d'assurance voyage en ligne, simplifiant les démarches pour les voyageurs.",
       footerLink: [
         {
           name: "Visiter le site",
@@ -325,8 +326,7 @@ const achievementSection = {
     },
     {
       title: "Postman API Fundamentals Student Expert",
-      subtitle:
-        ".",
+      subtitle: ".",
       image: require("./assets/images/Postman.png"),
       imageAlt: "Google Code-In Logo",
       footerLink: [
@@ -346,8 +346,7 @@ const achievementSection = {
     },
     {
       title: "full stack web developer",
-      subtitle:
-        "GOMYCODE RABAT BOOTCAMP.",
+      subtitle: "GOMYCODE RABAT BOOTCAMP.",
       image: require("./assets/images/CERTIF gomycode.PNG"),
       imageAlt: "Google Assistant Action Logo",
       footerLink: [
@@ -364,7 +363,10 @@ const achievementSection = {
       image: require("./assets/images/freecodecamp.webp"),
       imageAlt: "PWA Logo",
       footerLink: [
-        { name: "Certification", url: "https://www.freecodecamp.org/certification/MDICKO/responsive-web-design" },
+        {
+          name: "Certification",
+          url: "https://www.freecodecamp.org/certification/MDICKO/responsive-web-design"
+        },
         {
           name: "Freecodecamp",
           url: "https://www.freecodecamp.org/certification/MDICKO/responsive-web-design"
@@ -430,7 +432,6 @@ const achievementSection = {
   ],
   display: true // Set false to hide this section, defaults to true
 }; */
-
 
 // Resume Section
 const resumeSection = {

@@ -20,8 +20,7 @@ export default function Greeting() {
         <div className="greeting-main">
           <div className="greeting-text-div">
             <div>
-
-            {/* <h1 className="text-3xl font-bold underline">
+              {/* <h1 className="text-3xl font-bold underline">
       Hello world!
     </h1> */}
               <h1
